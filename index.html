@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ton agence – Accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">TonLogo</div>
+      <nav class="main-nav">
+        <a href="#agence">Agence</a>
+        <a href="#services">Services</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div>
+          <p class="hero-tagline">Ton agence de communication à [Ta ville]</p>
+          <h1>Créons la communication<br>qui te ressemble</h1>
+          <p class="hero-text">
+            On met en lumière tes projets, en ligne, sur papier, et partout ailleurs.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Nous contacter</a>
+            <a href="#projets" class="btn btn-outline">Voir nos projets</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENCE -->
+    <section id="agence" class="section section-agence">
+      <div class="container section-grid">
+        <div>
+          <h2>Ton agence, c'est quoi ?</h2>
+          <p>
+            Ici tu mets ton texte de présentation : qui tu es, ce que tu fais,
+            pourquoi on devrait travailler avec toi, etc.
+          </p>
+          <a href="#contact" class="btn-link">Découvrir l'agence</a>
+        </div>
+        <div class="image-placeholder">
+          Image / photo de l'équipe / du bureau
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section section-services">
+      <div class="container">
+        <h2>Qu'est-ce qu'on fait ?</h2>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Réseaux sociaux</h3>
+            <p>Tu veux que ta marque soit visible là où sont tes clients.</p>
+          </article>
+          <article class="service-card">
+            <h3>Site internet</h3>
+            <p>Pas juste un site vitrine, un site qui convertit vraiment.</p>
+          </article>
+          <article class="service-card">
+            <h3>Identité visuelle</h3>
+            <p>Logo, couleurs, ton… tout ce qui crée ton univers de marque.</p>
+          </article>
+          <!-- Ajoute d'autres cartes / services -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets" class="section section-projets">
+      <div class="container">
+        <h2>Nos projets</h2>
+        <p>Ici tu pourras mettre un grid de cases cliquables vers tes réalisations.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT / NEWSLETTER -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <h2>On en parle ?</h2>
+        <form class="contact-form">
+          <input type="text" name="name" placeholder="Ton nom" required />
+          <input type="email" name="email" placeholder="Ton email" required />
+          <textarea name="message" rows="4" placeholder="Ton projet" required></textarea>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 – Ton agence. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Plan du site</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bandeau cookies (simplifié) -->
+  <div class="cookie-banner" id="cookieBanner">
+    <p>On utilise des cookies pour améliorer ton expérience. Ça te va ?</p>
+    <div>
+      <button class="btn btn-small" onclick="acceptCookies()">Accepter</button>
+      <button class="btn btn-small btn-outline" onclick="declineCookies()">Refuser</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
